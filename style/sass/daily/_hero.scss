@@ -1,0 +1,51 @@
+.daily {
+  padding: 8px 20px;
+}
+.dl-hero {
+  position: relative;
+  &-text {
+    position: absolute;
+    z-index: 2;
+    @include center($left: 20%, $top: 40%);
+    text-align: center;
+    & h3 {
+      font-size: 80px;
+      color: $text-color;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: $main-color;
+    }
+    & a {
+      @include btn($roud: 20px);
+      padding: 10px 32px;
+      text-align: center;
+    }
+  }
+}
+@include maxw(890px) {
+  .dl-hero-text h3 {
+    font-size: 60px;
+  }
+  .dl-hero-text a {
+    font-size: 14px;
+    padding: 8px 28px;
+  }
+}
+@include maxw(768px) {
+  .dl-hero-text {
+    left: 50%;
+  }
+}
+@include maxw(480px) {
+  .dl-hero-text h3 {
+    font-size: 40px;
+  }
+  .dl-hero-text a {
+    font-size: 12px;
+    padding: 6px 25px;
+  }
+}
+@include maxw(376px) {
+  .dl-hero-text h3 {
+    font-size: 30px;
+  }
+}

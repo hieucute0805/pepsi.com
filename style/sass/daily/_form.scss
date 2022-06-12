@@ -1,0 +1,122 @@
+.form {
+  margin-top: 70px;
+  padding: 0 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  &-headding {
+    text-align: center;
+    font-size: 50px;
+    color: $main-color;
+    position: relative;
+    margin-bottom: 80px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 2px solid $main-color;
+      bottom: 0;
+    }
+  }
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 70px;
+    .form-wrap {
+      text-align: center;
+    }
+    & h3 {
+      font-size: 30px;
+      text-align: center;
+      color: $text-dark;
+    }
+    .name-and-email {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 10px;
+    }
+    & textarea {
+      width: 100%;
+      margin-top: 20px;
+      resize: none;
+      padding: 10px 0;
+      height: 150px;
+    }
+    & input,
+    textarea {
+      border-radius: 10px;
+      background-color: #d8ebfa;
+      padding: 10px;
+    }
+    .form-btn {
+      @include btn($roud: 100rem, $bg: $main-color);
+      padding: 10px 32px;
+      margin: 50px 0;
+    }
+  }
+  .item-wrapper-icon {
+    list-style: none;
+    padding: 60px;
+    font-size: 20px;
+    color: $text-dark;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    line-height: 2;
+    border-radius: 20px;
+    height: 90%;
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    & img {
+      width: 120px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+    }
+    & h4 {
+      font-size: 30px;
+      color: $main-color;
+    }
+    .icon-item {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin: 10px 0;
+      & i {
+        color: $main-color;
+      }
+    }
+  }
+}
+@include maxw(900px) {
+  .form-content {
+    grid-template-columns: 1fr;
+  }
+}
+@include maxw(480px) {
+  .form-headding {
+    font-size: 30px;
+  }
+  .form-content h3 {
+    font-size: 20px;
+  }
+  .name-and-email {
+    display: flex !important;
+    gap: 6% !important;
+    & input {
+      width: 47%;
+    }
+  }
+}
+@include maxw(400px) {
+  .form-content {
+    display: block;
+  }
+  .form .item-wrapper-icon {
+    padding: 25px;
+    font-size: 16px;
+  }
+}

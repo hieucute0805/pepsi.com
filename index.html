@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./style/tailwind.config.cjs"></script>
+    <link href="./aos-master/dist/aos.css" rel="stylesheet">
+    <script src="./aos-master/dist/aos.js"></script>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="main overflow-hidden">
+        <header class="header bg-mainColor leading-10 shadow-md px-4 py-2">
+            <div class="lg:max-w-[1100px] xl:max-w-[1200px] m-auto">
+                <div class="wrap_header_item flex items-center justify-between ">
+                    <div class="logo w-[90px] h-[37px] sm:w-[134px] sm:h-[48px]">
+                        <img class="w-full h-full object-cover" src="./img/lgogo.png" alt="">
+                    </div>
+                    <nav
+                        class="wrap_menu w-[60%] -left-3 h-screen sm:h-auto translate-x-[-100%] p-10 z-[100] top-0 bg-mainColor absolute sm:p-0 sm:static sm:bg-transparent sm:translate-x-[0]">
+                        <ul class=" menu justify-between items-center text-textColor sm:flex">
+                            <li><a href="./index.html">HOME</a></li>
+                            <li><a href="./product.html">WHAT'S NEW</a></li>
+                            <li><a href="./daily.html">STORE</a></li>
+                            <li><a href="">NEWS</a></li>
+                            <li><a href="">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="wrap_icon text-textColor flex  items-center">
+                        <i class="fa-brands fa-twitter m-1"></i>
+                        <i class="fa-brands fa-facebook m-1"></i>
+                        <i class="fa-brands fa-instagram-square m-1"></i>
+                    </div>
+                    <i class=" bar fa-solid fa-bars block sm:hidden sm:mr-0 text-textColor mr-4"></i>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="wrap_video relative">
+                <video autoplay muted loop id="myVideo">
+                    <source src="./img/video.mp4" type="video/mp4">
+                </video>
+                <div class="video_text w-2/5 text-center absolute leading-[4rem] top-1/4 text-textColor right-8">
+                    <h3 class="text-xl md:text-3xl lg:text-5xl py-4 text-[#26f3f0]"></h3>
+                    <div class="animate_t absolute m-auto w-full" data-aos="fade-left" data-aos-duration="3000">
+                        <p class="text-xs md:text-sm lg:text-xl">You've Got a Lot to Live, Pepsi's Got a Lot to Give</p>
+                        <button
+                            class="bg-[#56534c5d] border border-solid border-slate-300 outline-none text-textColor px-5 leading-8 cursor-pointer">Get
+                            start</button>
+                    </div>
+                    <div data-aos="fade-down-right" data-aos-duration="2000"
+                        class=" lg:block animate_arow absolute top-[113%] right-[20%] transition-transform delay-500 ease-linear">
+                        <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_oz7crmet.json"
+                            background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay>
+                        </lottie-player>
+                    </div>
+                </div>
+                <div class="gradien h-10 w-full z-50 bottom-[-30px] absolute bg-white "></div>
+            </div>
+            <div class="max-w-[1200px] m-auto">
+                <div class="wrap_product grid grid-cols-1 md:grid-cols-2 mt-24 px-5">
+                    <div class="product_text text-center leading-8" data-aos="fade-right">
+                        <h3 class="text-4xl text-mainColor">Ask for More</h3>
+                        <p class="text-titleColor text-base">Catch that Pepsi spirit</p>
+                        <p class="text_content text-sm w-[74%] my-5 mx-auto">Pepsi là một đồ uống giải khát có gas, lần
+                            đầu tiên được sản xuất bởi
+                            Bradham.Ban đầu,Ông pha chế ra một loại nước uống dễ hấp thụ làm từ nước cacbonat, đường,
+                            vani và một ít dầu ăn dưới tên “Nước uống của Brad" năm 1892.</p>
+                        <img class="w-[70%] m-auto pointer-events-none" src="./img/avatar.png" alt="">
+                    </div>
+                    <div class="product_img grid px-4 md:px-0 grid-cols-2 gap-[10px] h-[90%] mt-[5%] relative"
+                        data-aos="fade-left">
+                        <aside>
+                            <img data-aos="flip-left" data-aos-duration="2000" src="./img/item1.png" alt="">
+                        </aside>
+                        <aside>
+                            <img data-aos="flip-right" data-aos-duration="2000" src="./img/item2.png" alt="">
+                        </aside>
+                        <aside>
+                            <img data-aos="flip-left" data-aos-duration="2000" src="./img/item3.png" alt="">
+                        </aside>
+                        <aside>
+                            <img data-aos="flip-right" data-aos-duration="2000" src="./img/item4.png" alt="">
+                        </aside>
+                        <img class="vector w-[200px] h-[200px] absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 pointer-events-none z-50"
+                            src="./img/Untitled-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="allYour h-[800px] bg-bgr bg-cover mt-10 flex justify-center items-center">
+                <div data-aos="zoom-in"
+                    class="allYour_text w-[90%] md:w-3/5 h-[400px] bg-white m-auto shadow-xl grid grid-cols-2 relative rounded-lg lg:rounded-bl-[50px] p-3 ">
+                    <div class="wrap_img relative">
+                        <img class="w-[45%] h-2/5 sm:h-3/5 lg:h-4/5" src="./img/pepsi1.png" alt="">
+                    </div>
+                    <div class="allYourRight mt-8 md:leading-8">
+                        <h2 class="text-mainColor font-semibold">ALL YOUR </h2>
+                        <p class="text-sm  md:text-base text-titleColor ">FAVORITE FLAVORS ALL RIGHT HERE.</p>
+                        <span class=" text-[10px] sm:text-xs lg:text-sm z-10">
+                            Pepsi. Diet Pepsi. Pepsi Zero Sugar. The gang's all here. Compare flavors, get nutritional
+                            facts and check out ingredients for all
+                            our Pepsi products. <br>
+                            Flavors, get nutritional facts and check out ingredients for all
+                            our Pepsi products.</span>
+                        <div class="slice_item hidden lg:flex items-center justify-between">
+                            <i class="hidden sm:block fa-solid fa-angle-left"></i>
+                            <img class=" h-20" src="./img/pepsi1.png" alt="">
+                            <img class=" h-20" src="./img/pepsi2.png" alt="">
+                            <img class=" h-20" src="./img/pepsi3.png" alt="">
+                            <i class="hidden sm:block fa-solid fa-angle-right"></i>
+                        </div>
+                        <img src="./img/canhquat.png" alt=""
+                            class="coixay absolute right-0 bottom-0 w-2/5 md:w-[200px] opacity-50">
+                        <div
+                            class="since bg-white absolute w-[130px] h-[130px] text-center -top-[20%] -right-[3%] md:-right-[9%] rounded-md text-xl shadow-md shadow-slate-600 bg-bgr2 bg-cover">
+                            <p class="text-titleColor text-3xl">SINCE</p>
+                            <span class="text-xl">1892</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="newproduct mt-5">
+                <div class="header_newproduct block m-auto bg-cover w-full lg:w-3/6 h-28 relative">
+                    <img src="./img/bg-3.png" class="w-full h-full object-cover opacity-30" alt="">
+                    <div class="absolute bottom-0 left-2/4 -translate-x-2/4 text-center">
+                        <h3 class="text-xl sm:text-3xl font-bold text-mainColor ">
+                            New Product</h3>
+                        <span class="text-black italic text-base sm:text-xl">pepsi zero sugar</span>
+                    </div>
+                </div>
+                <div class="max-w-[1200px] mx-auto product_content grid grid-cols-1 md:grid-cols-3 mt-10">
+                    <div
+                        class="column1 -translate-x-[1000px] md:translate-x-0 text-center absolute md:static p-5 md:p-0 bg-mainColor md:bg-transparent rounded-md">
+                        <div class="item_column1 mb-6 " data-aos="fade-right">
+                            <img class=" w-16 h-16 lg:w-24 lg:h-24 rounded-full object-cover block m-auto "
+                                src="./img/anh1.jpg" alt="">
+                            <p class="text-sm text-titleColor lg:text-xl my-2">Good for health</p>
+                            <span class="text-xs text-white md:text-black">Supports weight loss</span>
+                        </div>
+                        <div class="item_column1 mb-6" data-aos="fade-right">
+                            <img class=" w-16 h-16 lg:w-24 lg:h-24 rounded-full object-cover block m-auto "
+                                src="./img/totsk.png" alt="">
+                            <p class="text-sm text-titleColor lg:text-xl my-2">Good for health</p>
+                            <span class="text-xs text-white md:text-black">Supports weight loss</span>
+                        </div>
+                        <div class="item_column1 mb-6" data-aos="fade-right">
+                            <img class=" w-16 h-16 lg:w-24 lg:h-24 rounded-full object-cover block m-auto "
+                                src="./img/duvi.jpg" alt="">
+                            <p class="text-sm text-titleColor lg:text-xl my-2">Good for health</p>
+                            <span class="text-xs text-white md:text-black">Supports weight loss</span>
+                        </div>
+                    </div>
+                    <div class="column2 relative">
+                        <img class="block m-auto z-10" src="./img/can-pzs.png" alt="" data-aos="fade-up">
+                        <button
+                            class=" px-2 py-1 border border-solid border-cyan-300 absolute right-2 bottom-3 btn_detail block md:hidden">Detail</button>
+                    </div>
+                    <div data-aos="fade-left"
+                        class="column3 text-center relative flex justify-around col-start-1 col-end-3 md:col-span-1 md:block">
+                        <aside class="mt-6">
+                            <p class="text-2xl text-titleColor">Calo</p>
+                            <p class="text-[60px] font-bold text-mainColor ">0</p>
+                        </aside>
+                        <aside class="mt-6">
+                            <p class="text-2xl text-titleColor">Protein</p>
+                            <p class="text-[60px] font-bold text-mainColor ">0</p>
+                        </aside>
+                        <aside class="mt-6">
+                            <p class="text-2xl text-titleColor">FAT</p>
+                            <p class="text-[60px] font-bold text-mainColor ">0</p>
+                        </aside>
+                        <img src="./img/bg_year.png" class="absolute bottom-0 right-2/4 -z-10 -translate-x-2/4" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-10 max-w-[1200px] m-auto px-5">
+            <div class="header_footer flex justify-center items-center py-5 ">
+                <p class="text-xl text-[#0065c3]">Follow Us</p>
+                <div class="wrap_icon" data-aos="fade-right" data-aos-duration="3000">
+                    <i class="fa-brands fa-facebook"
+                        style="color: white;padding: 10px;background-color: #3b5998;border-radius: 100rem;"></i>
+                    <i class="fa-brands fa-instagram-square"
+                        style="color: white;padding: 10px;background-color:#00aced ;border-radius: 100rem;"></i>
+                    <i class="fa-brands fa-instalod"
+                        style="color: white;padding: 10px;background-color: #dd4b39;border-radius: 100rem;"></i>
+                    <i class="fa-brands fa-twitter"
+                        style="color: white;padding: 10px;background-color:#fd47b2 ;border-radius: 100rem;"></i>
+                    <i class="fa-solid fa-baseball"
+                        style="color: white;padding: 10px;background-color: #bb0000;border-radius: 100rem;"></i>
+                </div>
+            </div>
+            <div class="wrap_footer_content flex py-11 flex-wrap ">
+                <div class="column_left lg:w-3/5 grid grid-cols-3 gap-2 leading-8 mx-auto w-full text-center">
+                    <ul class="column_child" data-aos="fade-up-right">
+                        <h3 class="text-[#0065c3]">OUR SHOPS</h3>
+                        <li><a href=""> Product Support</a> </li>
+                        <li><a href=""> PC Setup & Support</a> </li>
+                        <li><a href=""> Services</a> </li>
+                        <li><a href=""> Extended</a> </li>
+                        <li><a href=""> Service Pl</a> </li>
+                    </ul>
+                    <ul class="column_child" data-aos="fade-up-right">
+                        <h3 class="text-[#0065c3]">Orders</h3>
+                        <li><a href=""> My Account</a> </li>
+                        <li><a href=""> Watch List</a> </li>
+                        <li><a href=""> Customer Service</a> </li>
+                        <li><a href=""> Returns</a> </li>
+                        <li><a href=""> Service Pl</a> </li>
+                    </ul>
+                    <ul class="column_child" data-aos="fade-up-right">
+                        <h3 class="text-[#0065c3]">OUR SHOPS</h3>
+                        <li><a href=""> Product Support</a> </li>
+                        <li><a href=""> PC Setup & Support</a> </li>
+                        <li><a href=""> Services</a> </li>
+                        <li><a href=""> Extended</a> </li>
+                        <li><a href=""> Service Pl</a> </li>
+                    </ul>
+                </div>
+                <div class="column_right w-full lg:w-2/5 text-center my-10 lg:my-0 text-xs lg:text-base"
+                    data-aos="fade-up-right">
+                    <h3 class="text-xl font-semibold text-[#0065c3]">Contact Us</h3>
+                    <div class="leading-8">
+                        <aside>
+
+                            <p>Address : No 40 Baria Sreet 133/2 NewYork City, NY, United Stat</p>
+                        </aside>
+                        <aside>
+                            <i class="fa-solid fa-envelope"
+                                style="color: white;padding: 10px;background-color: #dd4b39;border-radius: 100rem;"></i>
+                            <p>Email:pepsi@gmail.com</p>
+                        </aside>
+                        <aside>
+                            <i class="fa-solid fa-mobile-screen"
+                                style="color: white;padding: 10px 12px;background-color:#fd47b2 ;border-radius: 100rem;"></i>
+                            <p>Phone:00993889</p>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div style="display:flex; justify-content:center ;color:#ccc;font-size:14px;gap:10px;align-items: center;">
+            <i class="fa-brands fa-github"></i>
+            <p>https://github.com/luongnguyen0407</p>
+        </div>
+        <div class="back-to-top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </div>
+    <script src="./style/main.js"></script>
+    <script src="./style/header.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+
+</html>

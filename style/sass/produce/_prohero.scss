@@ -1,0 +1,148 @@
+.produce-hero {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 510px;
+  .produce-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    gap: 0 40px;
+  }
+  .introcuding-hero {
+    width: 25%;
+    text-align: center;
+    :first-child {
+      font-size: 25px;
+      color: $text-color;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    & h3 {
+      font-size: 80px;
+      font-weight: 900;
+      background: linear-gradient(
+        298deg,
+        rgba(170, 99, 66, 1) 10%,
+        rgba(227, 137, 98, 1) 64%
+      );
+      color: transparent;
+      -webkit-background-clip: text;
+      background-color: text;
+    }
+    :nth-child(3) {
+      font-family: "Vesper Libre", serif;
+      color: $text-color;
+      font-style: italic;
+      font-size: 60px;
+      line-height: 1;
+    }
+    :nth-child(4) {
+      font-size: 20px;
+      color: $text-color;
+      line-height: 2;
+      white-space: nowrap;
+      margin-top: 20px;
+    }
+  }
+  .hero-stated {
+    width: 20%;
+  }
+  .hero-img {
+    width: 55%;
+    pointer-events: none;
+  }
+  .hero-stated {
+    color: $text-color;
+  }
+  .hero-footer {
+    text-align: center;
+    & p {
+      color: #567d90;
+    }
+    & span {
+      color: $text-color;
+    }
+  }
+}
+@include maxw(1030px) {
+  .produce-hero .hero-img {
+    width: 40%;
+  }
+  .produce-hero {
+    background-size: 120%;
+  }
+  .produce-hero .introcuding-hero {
+    width: 30%;
+    :first-child {
+      font-size: 23px;
+    }
+    & h3 {
+      font-size: 60px;
+      white-space: nowrap;
+    }
+    :nth-child(3) {
+      font-size: 40px;
+    }
+    :nth-child(4) {
+      font-size: 18px;
+    }
+  }
+}
+@include maxw(890px) {
+  .produce-hero .hero-stated {
+    display: none;
+  }
+  .produce-hero .produce-content {
+    height: 70%;
+  }
+}
+@include maxw(769px) {
+  .produce-hero {
+    background-size: 150%;
+  }
+  .produce-hero .introcuding-hero {
+    width: 40%;
+    :first-child {
+      font-size: 20px;
+    }
+    & h3 {
+      font-size: 50px;
+      white-space: nowrap;
+    }
+    :nth-child(3) {
+      font-size: 20px;
+    }
+    :nth-child(4) {
+      font-size: 14px;
+    }
+  }
+}
+@include maxw(570px) {
+  .produce-hero {
+    background-size: 180%;
+  }
+}
+@include maxw(480px) {
+  .hero-footer {
+    display: none;
+  }
+  .produce-hero {
+    height: 300px;
+  }
+  .produce-content {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px 0 !important;
+    .introcuding-hero {
+      width: 100%;
+    }
+  }
+  .produce-hero .introcuding-hero h3 {
+    line-height: 1;
+  }
+  .produce-hero .produce-content {
+    height: 100%;
+  }
+}

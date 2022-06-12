@@ -1,0 +1,172 @@
+.produce-item {
+  margin-top: 50px;
+  height: 450px;
+  .line {
+    position: relative;
+    padding-bottom: 50px;
+    padding: 0 20px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40%;
+      border: 2px solid $main-color;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  & h3 {
+    display: inline;
+    font-size: 40px;
+    color: $main-color;
+  }
+  & span {
+    font-size: 14px;
+    font-style: italic;
+    color: $text-brow;
+    margin-left: 20px;
+  }
+  .wrapper-item {
+    margin-top: 40px;
+    // display: grid;
+    // grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    // gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .one-item {
+      text-align: center;
+      padding: 15px;
+      width: 12%;
+      & img {
+        display: block;
+        margin: auto;
+        object-fit: cover;
+        cursor: pointer;
+      }
+      & p {
+        margin-top: 20px;
+        font-size: 18px;
+        color: $text-brow;
+        white-space: nowrap;
+      }
+    }
+  }
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .lightbox-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    height: 70%;
+  }
+  .lightbox-content img {
+    max-height: 400px;
+    max-width: 90%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  .lightbox-content i {
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin: 0 20px;
+  }
+  .introl-sp {
+    width: 600px;
+    background-color: white;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 20px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    & img {
+      max-width: 60%;
+      margin: auto;
+    }
+    .img {
+      width: 50%;
+      text-align: center;
+    }
+    .text {
+      text-align: center;
+      width: 50%;
+      & h3 {
+        color: $main-color;
+        font-size: 30px;
+      }
+      .light-btn {
+        margin-top: 30px;
+        @include btn($roud: 100rem, $bg: white);
+        padding: 8px 30px;
+        color: $main-color;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        transition: all 0.25s ease-in-out;
+        &:hover {
+          color: white;
+          background-color: $main-color;
+        }
+      }
+    }
+  }
+}
+@include maxw(1024px) {
+  .wrapper-item {
+    justify-content: center !important;
+  }
+  .produce-item .wrapper-item .one-item p {
+    white-space: break-spaces;
+  }
+  .one-item {
+    width: 24% !important;
+  }
+  .produce-item {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .produce-item .wrapper-item .one-item img {
+    width: 50%;
+  }
+  .produce-item .lightbox-content {
+    height: 50%;
+  }
+  .produce-item .introl-sp .img {
+    width: 35%;
+  }
+}
+@include maxw(570px) {
+  .one-item {
+    width: 32% !important;
+  }
+  .lightbox-content {
+    width: 120%;
+  }
+  .produce-item .introl-sp {
+    padding: 0;
+  }
+  .produce-item .introl-sp .img {
+    width: 35%;
+  }
+  .produce-item .introl-sp .text h3 {
+    font-size: 20px;
+  }
+  .produce-item .introl-sp .text p {
+    font-size: 12px;
+  }
+}

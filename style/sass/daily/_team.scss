@@ -1,0 +1,122 @@
+.team {
+  padding: 0 20px;
+  margin-top: 90px;
+  height: 600px;
+  width: 100%;
+  position: relative;
+  &-banner {
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+    z-index: 3;
+  }
+  &-we {
+    font-size: 24px;
+    font-style: italic;
+    color: $main-color;
+    font-weight: 500;
+  }
+  &-headding {
+    font-size: 50px;
+    color: $main-color;
+    position: relative;
+    max-width: 50%;
+    &::after {
+      content: "";
+      position: absolute;
+      border: 2px solid $main-color;
+      width: 40%;
+      left: 0;
+      height: 3px;
+      color: $main-color;
+      bottom: 0;
+    }
+  }
+  &-about {
+    max-width: 50%;
+    color: #000000;
+  }
+  &-item {
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    flex: 1;
+    & i {
+      border: 1px solid #000;
+      padding: 2px 3px;
+      border-radius: 100rem;
+    }
+    & li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  &-btn {
+    max-width: 40%;
+    text-align: center;
+    & p {
+      font-size: 25px;
+      color: $main-color;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    & a {
+      @include btn($roud: 20px, $bg: #ff5528);
+      padding: 10px 32px;
+      color: $text-color;
+      font-weight: 600;
+    }
+  }
+}
+@include maxw(1025px) {
+  .team-headding {
+    font-size: 40px;
+  }
+  .team-wrapper {
+    gap: 20px;
+  }
+}
+@include maxw(870px) {
+  .team-banner {
+    opacity: 0.4;
+  }
+  .team-banner {
+    display: none;
+  }
+  .team-item,
+  .team-about,
+  .team-headding {
+    max-width: 100%;
+  }
+  .team-btn {
+    margin: auto;
+  }
+  .team {
+    margin-top: 20px;
+  }
+}
+@include maxw(480px) {
+  .team-wrapper {
+    gap: 10px;
+  }
+  .team-btn a {
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  .team-btn p {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
